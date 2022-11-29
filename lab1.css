@@ -1,0 +1,121 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+	font-family: montserrat;
+	background-image: url(1.jpg);
+	background-size: cover;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	transition: 1s;
+	animation-name: manoj;
+	animation-direction: alternate-reverse;
+	animation-duration:30s;
+	animation-fill-mode:forwards; 
+	animation-play-state:running;
+	animation-timing-function:ease-in-out;
+	animation-iteration-count:infinite;
+}
+@keyframes manoj{
+0%{
+	background-image: url(0.jpg);
+}
+25%{
+	background-image: url(3.jpg);
+}
+50%{
+	background-image: url(1.jpg);
+}
+75%{
+	background-image: url(4.jpg);
+}
+100%{
+	background-image: url(6.png);
+}
+}
+nav{
+	background: aqua;
+	height: 80px;
+	width: 100%;
+}
+label.logo{
+	color: white;
+	font-size: 50px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight:bold;
+}
+nav ul{
+	float: right;
+	margin-right: 40px;
+}
+nav ul li{
+	display: inline;
+	line-height: 80px;
+	margin: 0 5px;
+	font-size: 20px;
+	
+}
+nav a:hover{
+	background-color: green;
+	color: brown;
+}
+
+.footer{
+	margin-top: 100px;
+	width: 100%
+	padding:none;
+	background:transparent;
+	color: aqua;
+	display: flex; 
+}
+.footer div{
+	text-align: center;
+	display: inline;
+}
+.col2{
+	flex-flow: 20px;
+}
+.footer div h3{
+	font-weight: 300;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+.col a{
+display: block;
+text-decoration: none;
+margin-bottom: 10px;
+}
+form input{
+	width: 400px;
+	height: 45px;
+	border-radius: 4px;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	outline: none;
+	border:none;
+}
+form button{
+background:red;
+border:2px;
+color: aqua;
+border-radius: 50px;
+padding: 10px,30px;
+font-size: 15px;
+cursor: pointer;
+}
+footer{
+
+    width: 100%;
+    position: absolute;
+    bottom:0;  
+ padding:100px,30px;
+ border-top-left-radius: 100px;
+ font-size: 15px;
+ line-height: 15px; 
+}
